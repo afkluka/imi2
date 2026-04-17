@@ -5,13 +5,13 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #5CFFB8;
+    background: #141414;
     color: white;
 }
 
 /* TOP BAR */
 .topbar {
-    background: #8AFFB9;
+    background: #1f1f1f;
     border-bottom: 3px solid #27F561;
     padding: 16px;
     display: flex;
