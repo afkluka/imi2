@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #141414;
+    color: white;
+}
+
+/* TOP BAR */
+.topbar {
+    background: #1f1f1f;
+    border-bottom: 3px solid #27F561;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    background: #2c2c2c;
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid #3a3a3a;
+}
+
+nav a:hover {
+    background: #27F561;
+}
+
+/* HERO CENTERED */
+.home-page {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.hero-card {
+    background: #222;
+    border: 2px solid #27F561;
+    border-radius: 20px;
+    padding: 40px 20px;
+}
+
+.hero-card h1 {
+    margin: 0;
+    font-size: 48px;
+}
+
+.hero-card p {
+    margin-top: 10px;
+    color: #ccc;
+}
+
+/* BUTTONS */
+.hero-buttons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.hero-btn {
+    padding: 14px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background: #2c2c2c;
+    border: 2px solid #444;
+}
+
+.hero-btn:hover {
+    background: #27F561;
+}
+
+/* CARDS GRID */
+.menu-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.menu-card {
+    background: #222;
+    border: 2px solid #333;
+    border-radius: 16px;
+    padding: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-card:hover {
+    border-color: #27F561;
+    transform: translateY(-3px);
+}
+
+.menu-card h2 {
+    margin: 10px 0;
+}
+
+.menu-card p {
+    color: #aaa;
+}
+
+/* RUNES */
+.rune-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.rune-card {
+    background: #222;
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.rune-card:hover {
+    border-color: #27F561;
+}
+
+.rune-card img {
+    width: 100px;
+    margin: 10px 0;
+}
+
+/* POPUP */
+.popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #222;
+    border: 2px solid #27F561;
+    padding: 20px;
+    border-radius: 16px;
+    max-height: 80vh;
+    overflow-y: auto;
+    width: 90%;
+    max-width: 900px;
+}
+
+.close {
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#popup-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.popup-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.guide-box {
+    background: #222;
+    border: 2px solid #27F561;
+    border-radius: 18px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.guide-box h2 {
+    margin-top: 0;
+}
+
+.guide-box ol {
+    padding-left: 20px;
+}
+
+.guide-box li {
+    margin-bottom: 10px;
+    color: #ddd;
+    line-height: 1.5;
+}
+
+/* ===== CALCULATOR HERO CUSTOM ===== */
+
+.hero-custom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px 30px;
+}
+
+.hero-box {
+    background: linear-gradient(180deg, #2c2c2c 0%, #1f1f1f 100%);
+    border: 2px solid #ff8c1a;
+    border-radius: 22px;
+    padding: 30px;
+    text-align: center;
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 0 16px 30px rgba(0,0,0,0.35);
+}
+
+.hero-small {
+    display: block;
+    color: #ff9f2f;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.hero-box h1 {
+    margin: 0;
+    font-size: 36px;
+    color: white;
+}
+
+.hero-box p {
+    margin-top: 12px;
+    color: #cfcfcf;
+    font-size: 16px;
+}
